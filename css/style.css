@@ -122,15 +122,21 @@ main {
   display: grid;
   gap: 25px;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, 150px);
+  grid-template-columns: repeat(auto-fit, 200px);
 }
 
 .author-grid-item {
-  background-color: #24385b;
+  background-color: var(--border-line);
   padding: 15px;
 }
 
+.author-grid-item p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
 .author-grid-item img {
+  background-color: var(--border-line);
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -157,5 +163,9 @@ main {
   }
   .books-item:hover {
     transform: scale(1.5);
+  }
+
+  .author-grid-item {
+    margin-bottom: 2rem;
   }
 }
