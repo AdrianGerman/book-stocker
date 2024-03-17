@@ -1,0 +1,16 @@
+:root {
+  --title-color: white;
+  ---button-color: #fb8c00;
+  --background-color: #121f3d;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background-color);
+  color: var(--title-color);
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
