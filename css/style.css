@@ -2,6 +2,7 @@
   --title-color: white;
   ---button-color: #fb8c00;
   --background-color: #121f3d;
+  --border-line: #24385b;
 }
 
 * {
@@ -13,4 +14,43 @@
 main {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(300px, 2fr) 3fr;
+  grid-auto-rows: 550px;
+  border-bottom: 1px solid var(--border-line);
+  gap: 100px;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.info {
+  align-self: center;
+}
+
+.info-title {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 24px;
+}
+
+.info-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 24px;
+}
+
+.info-button {
+  border: none;
+  border-radius: 20px;
+  color: var(--background-color);
+  background-color: var(---button-color);
+  font-weight: bolder;
+  padding: 20px 20px;
+  cursor: pointer;
 }
